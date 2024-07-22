@@ -1,5 +1,3 @@
-// fill.cpp
- 
 #include <cstring>
 #include <chrono>
 #include <iostream>

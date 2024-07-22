@@ -1,5 +1,3 @@
-// vectorArithmeticExpressionTemplates.cpp
-
 #include <cassert>
 #include <iostream>
 #include <vector>

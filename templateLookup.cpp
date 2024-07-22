@@ -12,8 +12,8 @@ struct S {
 void g(int) { std::cout << "g(int)\n"; }
  
 int main(){
-    g(1);                 // calls g(int)
+    g(1);                 
  
     S<int> s;
-    s.f();                // calls g(double)
+    s.f();                
 }

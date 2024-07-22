@@ -1,5 +1,3 @@
-// functionTemplateArgumentDeductionValue.cpp
-
 template <typename T>
 void funcValue(T param){}
 

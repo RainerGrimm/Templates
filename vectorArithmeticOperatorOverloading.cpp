@@ -1,6 +1,4 @@
-// vectorArithmeticOperatorOverloading.cpp
-
-#include <iostream>
+Rich#include <iostream>
 #include <vector>
 
 template<typename T>

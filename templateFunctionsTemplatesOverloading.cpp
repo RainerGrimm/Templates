@@ -1,20 +1,20 @@
 #include <iostream>
 
-void xchg(int& x, int& y){   // 1
+void xchg(int& x, int& y){   
   int t= x;
   x=y;
   y=t;
 }
 
 
-template <typename T>        // 2
+template <typename T> 
 void xchg(T& x, T& y){
   T t= x;
   x=y;
   y=t;
 }
 
-template <typename T>         // 3
+template <typename T> 
 void xchg(T& x, T& y, T& z){
   xchg(x,y);
   xchg(x,z);
@@ -32,14 +32,13 @@ int main(){
   double doubleA= 5.5;
   double doubleB= 10.0;
 
-  xchg(intA, intB);              // 1
-  xchg(doubleA, doubleB);        // 2
+  xchg(intA, intB);     
+  xchg(doubleA, doubleB);        
+  xchg<>(intA, intB);            
+  xchg<int>(intA, intB);         
+  // xchg<double>(intA, intB);     
 
-  xchg<>(intA, intB);            // explicit 2
-  xchg<int>(intA, intB);         // explicit 2: xchg<int>
-  // xchg<double>(intA, intB);      // ERROR explicit xchg<double>
-
-  xchg(intA, intB, intC);        // 3
+  xchg(intA, intB, intC);        
 
   std::cout << '\n';
 

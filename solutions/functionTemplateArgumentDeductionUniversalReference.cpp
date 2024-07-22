@@ -1,5 +1,3 @@
-// functionTemplateArgumentDeductionUniversalReference.cpp
-
 template <typename T>
 void funcUniversal(T&& param){}
 

@@ -14,12 +14,12 @@ int main() {
     const int lVal{};
     const int& ref = lVal;
   
-    funcValue(lVal);                  // (1)
+    funcValue(lVal);                  
     funcValue(ref);
   
-    funcReference(lVal);              // (2)
+    funcReference(lVal);              
   
-    funcUniversalReference(lVal);     // (3)
+    funcUniversalReference(lVal);     
     funcUniversalReference(RVal());
 
 }
