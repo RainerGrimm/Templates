@@ -17,17 +17,16 @@ struct Power<m,0>{
 };
 
 template<int n>
-int power(const int& m){
-    return power<n-1>(m) * m;
+int power(int m){
 }
 
 template<>
-int power<1>(const int& m){
+int power<1>(int m){
     return m;
 }
 
 template<>
-int power<0>(const int&){
+int power<0>(int){
     return 1;
 }
 
