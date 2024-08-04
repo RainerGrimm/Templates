@@ -18,11 +18,7 @@ struct Power<m,0>{
 
 template<int n>
 int power(int m){
-}
-
-template<>
-int power<1>(int m){
-    return m;
+    return power<n-1>(m) * m;
 }
 
 template<>

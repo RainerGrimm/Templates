@@ -17,7 +17,7 @@ struct IsSame{
 
 template <typename T>
 struct IsSame<T, T>{    
-  static bool const value = false;
+  static bool const value = true;
 };
 
 int main(){    
